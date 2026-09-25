@@ -1,0 +1,55 @@
+import {
+  Fingerprint,
+  PenTool,
+  Code2,
+  FileText,
+  BarChart3,
+  GraduationCap,
+  Users,
+  Megaphone,
+  Headset,
+  Compass,
+  ShoppingCart,
+  RefreshCw,
+  BookOpen,
+  HeartPulse,
+  Landmark,
+  Cpu,
+  Palette,
+  Scale,
+  Building2,
+  ShoppingBag,
+  Briefcase,
+  Rocket,
+  type LucideIcon,
+} from 'lucide-react'
+
+export const iconMap: Record<string, LucideIcon> = {
+  Fingerprint,
+  PenTool,
+  Code2,
+  FileText,
+  BarChart3,
+  GraduationCap,
+  Users,
+  Megaphone,
+  Headset,
+  Compass,
+  ShoppingCart,
+  RefreshCw,
+  BookOpen,
+  HeartPulse,
+  Landmark,
+  Cpu,
+  Palette,
+  Scale,
+  Building2,
+  ShoppingBag,
+  Briefcase,
+  Rocket,
+}
+
+export function Icon({ name, className }: { name: string; className?: string }) {
+  const Component = iconMap[name] ?? Fingerprint
+  return <Component className={className} strokeWidth={1.75} />
+}

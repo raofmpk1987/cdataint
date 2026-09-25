@@ -1,0 +1,28 @@
+<!-- public/__forms.html — static skeleton for Netlify's build-time form detection only. Not rendered to users. -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Detection</title>
+  </head>
+  <body>
+    <form name="business-inquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="business-inquiry" />
+      <input name="bot-field" />
+      <input name="fullName" />
+      <input name="company" />
+      <input name="email" type="email" />
+      <input name="phone" />
+      <input name="country" />
+      <input name="service" />
+      <input name="package" />
+      <input name="budget" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <form name="newsletter" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="newsletter" />
+      <input name="bot-field" />
+      <input name="email" type="email" />
+    </form>
+  </body>
+</html>
